@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <script>
+         var socket = io.connect('http://54.93.98.141:4200');
+         socket.on('update-msg', function (msg) {
+           console.log(msg);
+         });
+        </script>
+    </head>
+    <body>
+        <h1>Hello World!1111</h1>
+    </body>
+</html>
